@@ -1,4 +1,5 @@
 #include "booking.h"
+
 void Booking::toBooking(int tickets) {
 	int contador = 0;
 	while (contador < tickets) {
@@ -39,9 +40,9 @@ void Booking::createConsecutive(int totalTicket, int roomNumber, int pay) {
 	string number = number1 + number2;
 	int boucher = stoi(number);
 	for (int i = 0; i < 25; i++) {
-		if (consecutive[i][0] == 0) {
-			consecutive[i][0] = boucher;
-			consecutive[i][1] ;
+		if (consecutive[i] == 0) {
+			consecutive[i] = boucher;
+			consecutive[i];
 		}
 	}
 }

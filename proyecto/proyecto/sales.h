@@ -1,9 +1,16 @@
 #pragma once
 #include <iostream>
-#include "booking.h"
+#include "string.h"
 using namespace std;
-class sales
-{
+class Sales{
+protected:
+	int ID;
+	int cardNumber;
+public:
+	Sales(int, int);
+	int getID() const;
+	int getCardNumber() const;
+	void pay();
 
 };
 

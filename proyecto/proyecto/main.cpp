@@ -6,6 +6,7 @@
 #include "movies.h"
 #include "booking.h"
 #include "string.h"
+#include "sales.h"
 using namespace std;
 int main() {
 	movieTheater r1("Deadpool & Wolverine", 2024, 127, "Estados Unidos", "3,6/5", 1, 4000);
@@ -26,7 +27,7 @@ int main() {
 		if (userSelect == 'a') { //reserva
 			int reserveSelect = 0;
 			int movieSelect = 0;
-			int totalTickets;
+			int totalTickets = 0;
 			cout << "Seleccione una sala\n1) Sala 1\n2) Sala 2" << endl;
 			cin >> reserveSelect;
 			if (reserveSelect == 1) {//sala numero 1
@@ -36,11 +37,12 @@ int main() {
 				rooms[1].displayAll();//funcion 2
 				cout << "Seleccione una pelicula: " << endl;
 				cin >> movieSelect;
-				while (movieSelect > 1) {
+				while (movieSelect > 3) {
 					cout << "Numero invalido" << endl;
 					cin >> movieSelect;
 				}
 				if (movieSelect == 1) {//deadpool
+					movieSelect--;
 					if (book[0].fullRoom()) {
 						cout << "Sala llena" << endl;
 					}
@@ -52,14 +54,14 @@ int main() {
 							cin >> totalTickets;
 						}
 						book[0].toBooking(totalTickets);
-						book[0].createConsecutive(totalTickets, rooms[0].getNumber(),rooms[0].getPrice());
+						book[0].createConsecutive(totalTickets, rooms[movieSelect].getNumber(), rooms[movieSelect].getPrice());
 					}
 				}
 				if (movieSelect == 2) {//el niño y la garza
 					if (book[1].fullRoom()) {
 						cout << "Sala llena" << endl;
 					}
-					if (!book[0].fullRoom()) {
+					if (!book[1].fullRoom()) {
 						printf("Cuantos boletos desea comprar:\n");
 						cin >> totalTickets;
 						while (totalTickets > 25) {
@@ -73,12 +75,12 @@ int main() {
 			}
 			if (reserveSelect == 2) {//sala 2
 				cout << "1)" << endl;
-				rooms[0].displayAll();//funcion 3
+				rooms[2].displayAll();//funcion 3
 				cout << "2)" << endl;
-				rooms[1].displayAll();//funcion 4
+				rooms[3].displayAll();//funcion 4
 				cout << "Seleccione una pelicula: " << endl;
 				cin >> movieSelect;
-				while (movieSelect > 1) {
+				while (movieSelect > 3) {
 					cout << "Numero invalido" << endl;
 					cin >> movieSelect;
 				}
@@ -98,18 +100,18 @@ int main() {
 					}
 				}
 				if (movieSelect == 2) {//wallace y groomit
-					if (book[1].fullRoom()) {
+					if (book[3].fullRoom()) {
 						cout << "Sala llena" << endl;
 					}
-					if (!book[0].fullRoom()) {
+					if (!book[3].fullRoom()) {
 						printf("Cuantos boletos desea comprar:\n");
 						cin >> totalTickets;
 						while (totalTickets > 25) {
 							cout << "Numero se excede, seleccione otro mas bajo" << endl;
 							cin >> totalTickets;
 						}
-						book[1].toBooking(totalTickets);
-						book[1].createConsecutive(totalTickets, rooms[3].getNumber(), rooms[3].getPrice());
+						book[3].toBooking(totalTickets);
+						book[3].createConsecutive(totalTickets, rooms[3].getNumber(), rooms[3].getPrice());
 					}
 				}
 			}

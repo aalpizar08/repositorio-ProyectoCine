@@ -4,7 +4,7 @@
 using namespace std;
 class Booking {
 protected:
-	int consecutive[25][2];
+	int consecutive[25];
 	int seats[5][5] = { { 1,2,3,4,5},
 						{ 6,7,8,9,10},
 						{ 11,12,13,14,15},

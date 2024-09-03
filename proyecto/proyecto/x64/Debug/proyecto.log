@@ -1,4 +1,6 @@
-﻿  main.cpp
+﻿  booking.cpp
+C:\Users\aleja\Desktop\programming\repositorio-Proyecto\proyecto\proyecto\booking.cpp(63,25): warning C4390: ';': se encontró una instrucción controlada vacía; ¿es esa la intención?
+  main.cpp
   sales.cpp
   Generando código...
-  proyecto.vcxproj -> C:\Users\aleja\source\repos\proyecto\x64\Debug\proyecto.exe
+  proyecto.vcxproj -> C:\Users\aleja\Desktop\programming\repositorio-Proyecto\proyecto\x64\Debug\proyecto.exe
