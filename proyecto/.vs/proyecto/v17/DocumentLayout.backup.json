@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\archive.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\archive.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\sales.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\sales.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\sales.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\sales.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\movieTheater.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -45,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\booking.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\booking.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\archive.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\archive.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\customer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -82,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "movieTheater.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\movieTheater.cpp",
               "RelativeDocumentMoniker": "proyecto\\movieTheater.cpp",
@@ -90,8 +86,7 @@
               "RelativeToolTip": "proyecto\\movieTheater.cpp",
               "ViewState": "AgIAAEcAAAAAAAAAAAAcwF4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-03T03:34:27.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T03:34:27.54Z"
             },
             {
               "$type": "Document",
@@ -103,25 +98,23 @@
               "RelativeToolTip": "proyecto\\booking.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-02T03:23:46.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T03:23:46.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "sales.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\sales.cpp",
               "RelativeDocumentMoniker": "proyecto\\sales.cpp",
               "ToolTip": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\sales.cpp",
               "RelativeToolTip": "proyecto\\sales.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-03T03:16:41.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T03:16:41.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "archive.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\archive.cpp",
               "RelativeDocumentMoniker": "proyecto\\archive.cpp",
@@ -142,12 +135,11 @@
               "RelativeToolTip": "proyecto\\movies.cpp",
               "ViewState": "AgIAAAUAAAAAAAAAAAAvwBkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-12T17:54:01.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T17:54:01.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "customer.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\customer.cpp",
               "RelativeDocumentMoniker": "proyecto\\customer.cpp",
@@ -155,12 +147,11 @@
               "RelativeToolTip": "proyecto\\customer.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-16T04:54:32.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T04:54:32.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "seats.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\seats.cpp",
               "RelativeDocumentMoniker": "proyecto\\seats.cpp",
@@ -178,7 +169,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "sales.h",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\sales.h",
               "RelativeDocumentMoniker": "proyecto\\sales.h",
@@ -201,8 +192,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-02T03:23:17.941Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -214,8 +204,7 @@
               "RelativeToolTip": "proyecto\\customer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-16T04:54:20.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T04:54:20.612Z"
             },
             {
               "$type": "Document",
@@ -227,8 +216,7 @@
               "RelativeToolTip": "proyecto\\seats.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-12T22:38:50.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T22:38:50.947Z"
             },
             {
               "$type": "Document",
@@ -240,8 +228,7 @@
               "RelativeToolTip": "proyecto\\movies.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-12T17:57:24.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T17:57:24.274Z"
             },
             {
               "$type": "Document",
@@ -253,42 +240,7 @@
               "RelativeToolTip": "proyecto\\movieTheater.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-03T03:30:26.476Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "2fccb57d-5b2f-4d5e-bec0-9e2ece4df05e",
-        "Display": 0,
-        "X": 1234,
-        "Y": 231,
-        "Width": 691,
-        "Height": 806,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\main.cpp",
-              "RelativeDocumentMoniker": "proyecto\\main.cpp",
-              "ToolTip": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\main.cpp",
-              "RelativeToolTip": "proyecto\\main.cpp",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAMwAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-16T06:55:49.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T03:30:26.476Z"
             }
           ]
         }

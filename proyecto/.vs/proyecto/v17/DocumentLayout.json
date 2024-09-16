@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\archive.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\archive.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\sales.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\sales.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -43,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\booking.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\archive.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\archive.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\customer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EB30AA66-2F76-4A03-8B86-BA9598746B33}|proyecto\\proyecto.vcxproj|solutionrelative:proyecto\\customer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "movieTheater.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\movieTheater.cpp",
               "RelativeDocumentMoniker": "proyecto\\movieTheater.cpp",
@@ -86,12 +86,11 @@
               "RelativeToolTip": "proyecto\\movieTheater.cpp",
               "ViewState": "AgIAAEcAAAAAAAAAAAAcwF4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-03T03:34:27.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T03:34:27.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "booking.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\booking.cpp",
               "RelativeDocumentMoniker": "proyecto\\booking.cpp",
@@ -99,12 +98,11 @@
               "RelativeToolTip": "proyecto\\booking.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-02T03:23:46.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T03:23:46.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "sales.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\sales.cpp",
               "RelativeDocumentMoniker": "proyecto\\sales.cpp",
@@ -112,12 +110,11 @@
               "RelativeToolTip": "proyecto\\sales.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-03T03:16:41.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T03:16:41.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "archive.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\archive.cpp",
               "RelativeDocumentMoniker": "proyecto\\archive.cpp",
@@ -130,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "movies.cpp",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\movies.cpp",
               "RelativeDocumentMoniker": "proyecto\\movies.cpp",
@@ -138,8 +135,7 @@
               "RelativeToolTip": "proyecto\\movies.cpp",
               "ViewState": "AgIAAAUAAAAAAAAAAAAvwBkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-12T17:54:01.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T17:54:01.745Z"
             },
             {
               "$type": "Document",
@@ -151,8 +147,7 @@
               "RelativeToolTip": "proyecto\\customer.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-16T04:54:32.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T04:54:32.701Z"
             },
             {
               "$type": "Document",
@@ -174,7 +169,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "sales.h",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\sales.h",
               "RelativeDocumentMoniker": "proyecto\\sales.h",
@@ -188,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "booking.h",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\booking.h",
               "RelativeDocumentMoniker": "proyecto\\booking.h",
@@ -197,12 +192,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-02T03:23:17.941Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "customer.h",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\customer.h",
               "RelativeDocumentMoniker": "proyecto\\customer.h",
@@ -210,12 +204,11 @@
               "RelativeToolTip": "proyecto\\customer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-16T04:54:20.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T04:54:20.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "seats.h",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\seats.h",
               "RelativeDocumentMoniker": "proyecto\\seats.h",
@@ -223,12 +216,11 @@
               "RelativeToolTip": "proyecto\\seats.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-12T22:38:50.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T22:38:50.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "movies.h",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\movies.h",
               "RelativeDocumentMoniker": "proyecto\\movies.h",
@@ -236,12 +228,11 @@
               "RelativeToolTip": "proyecto\\movies.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-12T17:57:24.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T17:57:24.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "movieTheater.h",
               "DocumentMoniker": "C:\\Users\\aleja\\Desktop\\programming\\repositorio-Proyecto\\proyecto\\proyecto\\movieTheater.h",
               "RelativeDocumentMoniker": "proyecto\\movieTheater.h",
@@ -249,8 +240,7 @@
               "RelativeToolTip": "proyecto\\movieTheater.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-03T03:30:26.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T03:30:26.476Z"
             }
           ]
         }
