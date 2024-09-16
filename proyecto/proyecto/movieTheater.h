@@ -1,18 +1,25 @@
 #pragma once
 #include <iostream>
-#include <ctime>
 #include "string.h"
 #include "movies.h"
+#include "seats.h"
+#define ROWSTHEATER 5
+#define COLUMNSTHEATER 5
 using namespace std;
 class movieTheater : public Movies {
 private:
-	int number;
-	int seats[5][5] = { { 1,2,3,4,5},{ 6,7,8,9,10},{ 11,12,13,14,15},{ 16,17,18,19,20},{ 21,22,23,24,25} };
+	int roomNumber;
 	int price;
-	tm schedule = {};
+	Seats seats[ROWSTHEATER][COLUMNSTHEATER];
 public:
 	movieTheater(string, int, int, string, string, int, int);
 	int getNumber() const;
 	int getPrice() const;
 	void displayAll() const;
+	void setRoom();
+	void printSeats();
+	bool fullRoom();
+	bool disponibility(int);
+	void setReserved(int,int);
+	void sold(int,int);
 };

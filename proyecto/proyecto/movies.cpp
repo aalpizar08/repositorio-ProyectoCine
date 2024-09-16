@@ -22,3 +22,6 @@ string Movies::getCountry() const {
 string Movies::getReview() const {
 	return this->review;
 }
+bool Movies::getIsMovie(){
+	return isMovie;
+}

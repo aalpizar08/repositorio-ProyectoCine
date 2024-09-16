@@ -1,6 +1,6 @@
 #include "archive.h"
 Archive::Archive() {
-	this->info = "Programa hecho por Alejandro Rafael Alpizar Rodriguez para el curso de programacion.\nEl proyecto consiste en una sala de cine que funciona mediante reservas";
+	this->info = "Programa hecho por Alejandro Rafael Alpizar Rodriguez para Nueva Cinema SA, con sede en Perez Zeledon\nTodos los derechos reservados ®";
 }
 void Archive::getInfo() {
 	cout << string(info);

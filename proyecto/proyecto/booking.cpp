@@ -1,71 +1,27 @@
 #include "booking.h"
+#include "seats.h"
+void Booking::toBooking(int voucher, int totalToPay) {
+	for (int i = 0; i < ROWSBOOKING; i++) {
+		if (vouchers[i][0] == 0) {
+			vouchers[i][0] = voucher;
+			vouchers[i][1] = totalToPay;
+			
+		}
+	}
+	cout << "Reserva hecha, el numero de boucher es de " << voucher << endl;
+	cout << "y el monto a pagar es de " << totalToPay << endl;
+	system("PAUSE");
+}
 
-void Booking::toBooking(int tickets) {
-	int contador = 0;
-	while (contador < tickets) {
-		int selectSeat = 0;
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-				cout << viewUser[i][j] << ' ';
-			}
-			cout << endl;
-		}
-		cout << "Seleccione un asiento: " << endl;
-		cin >> selectSeat;
-		while (selectSeat > 25) {
-			cout << "Numero fuera de rango, seleccione otro" << endl;
-			cin >> selectSeat;
-		}
-		bool detectD = disponibility(selectSeat);
-		while (!detectD) {
-			cout << "Asiento ocupado, seleccione otro" << endl;
-			cin >> selectSeat;
-			detectD = disponibility(selectSeat);
-		}
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-				if (selectSeat == seats[i][j]) {
-					seats[i][j] = 0;
-					viewUser[i][j] = "X";
-					cout << "Reserva realizada" << endl;
-					contador++;
-				}
-			}
-		}
-	}
-}
-void Booking::createConsecutive(int totalTicket, int roomNumber, int pay) {
-	string number1 = to_string(totalTicket);
-	string number2 = to_string(roomNumber);
-	string number = number1 + number2;
-	int boucher = stoi(number);
-	for (int i = 0; i < 25; i++) {
-		if (consecutive[i] == 0) {
-			consecutive[i] = boucher;
-			consecutive[i];
-		}
-	}
-}
-bool Booking::disponibility(int numberSeat) const {
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			if (numberSeat == seats[i][j]) {
+bool Booking::detectVoucher(int voucher)
+{
+	for (int i = 0; i < ROWSBOOKING; i++) {
+		for (int j = 0; j < COLUMNSBOOKING; j++) {
+			if (vouchers[i][j]) {
 				return true;
 			}
 		}
 	}
 	return false;
 }
-bool Booking::fullRoom()const {
-	int totalClients = 0;
-	for (int i = 0; i < 25; i++) {
-		for (int j = 0; j < 25; j++) {
-			if (seats[i][j] == 0);
-			totalClients++;
-		}
-	}
-	if (totalClients == 25) {
-		return true;
-	}
-	return false;
-}
+

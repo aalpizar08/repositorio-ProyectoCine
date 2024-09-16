@@ -1,16 +1,13 @@
 #pragma once
 #include <iostream>
 #include "string.h"
+#include "customer.h"
 using namespace std;
 class Sales{
 protected:
-	int ID;
-	int cardNumber;
+	Customer customer[25];
 public:
-	Sales(int, int);
-	int getID() const;
-	int getCardNumber() const;
 	void pay();
-
+	bool detectVoucher(int**,int,int,int);
 };
 

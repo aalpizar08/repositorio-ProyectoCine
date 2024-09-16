@@ -9,6 +9,7 @@ protected:
 	int duration;
 	string country;
 	string review;
+	bool isMovie = false;
 public:
 	Movies(string, int, int, string, string);
 	~Movies();
@@ -17,4 +18,5 @@ public:
 	int getDuration() const;
 	string getCountry()const;
 	string getReview()const;
+	bool getIsMovie();
 };
