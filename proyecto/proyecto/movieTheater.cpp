@@ -1,12 +1,14 @@
 #include <iostream>
 #include "movieTheater.h"
-#include "string.h"
 #include "movies.h"
 using namespace std;
-movieTheater::movieTheater(string name, int year, int duration, string country, string review, int roomNumber, int price) : Movies(name, year, duration, country, review) {
+movieTheater::movieTheater(string name, int year, int duration, string country, string review, int roomNumber, int price, int seatCount, time_t start, time_t end) : Movies(name, year, duration, country, review) {
 	this->roomNumber = roomNumber;
 	this->price = price;
-	//this->schedule = schedule;
+	this->seatCount = seatCount;
+	this->start = start;
+	this->end = end;
+	setRoom();
 }
 int movieTheater::getNumber() const {
 	return roomNumber;
@@ -15,59 +17,48 @@ int movieTheater::getNumber() const {
 int movieTheater::getPrice() const {
 	return price;
 }
-void movieTheater::displayAll() const {
-	cout << "=========================" << endl;
-	cout << "Nombre: " << name << endl;
-	cout << "Año: " << year << endl;
-	cout << "Pais: " << country << endl;
-	cout << "Calificacion: " << review << endl;
-	cout << "Sala: " << roomNumber << endl;
-	cout << "Precio: " << price << endl;
-	cout << "=========================" << endl;
-
+int movieTheater::getSeatCount() const {
+	return seatCount;
+}
+time_t movieTheater::getStart() const {
+	return start;
+}
+time_t movieTheater::getEnd() const {
+	return end;
+}
+Seats movieTheater::getSeat(int row, int column) const {
+	return seats[row][column];
 }
 void movieTheater::setRoom(){
 	int numberSeat = 1;
 	for (int i = 0; i < ROWSTHEATER; i++) {
 		for (int j = 0; j < COLUMNSTHEATER; j++) {
-			seats[i][j].setNumber(numberSeat);
+			if (numberSeat <= seatCount) {
+				seats[i][j].enable();
+				seats[i][j].setNumber(numberSeat);
+			}
 			numberSeat++;
 		}
 	}
 }
-void movieTheater::printSeats(){
-	for (int i = 0; i < ROWSTHEATER; i++) {
-		for (int j = 0; j < COLUMNSTHEATER; j++) {
-			if (seats[i][j].getNumber() > 0) {
-				cout << "{ " << seats[i][j].getNumber() << " }" << " ";
-			}
-			if (seats[i][j].getNumber() < 0) {
-				cout << "{ " << "R" << " }";//para butacas reservadas
-			}
-			if (seats[i][j].getNumber() == 0) {
-				cout << "{ " << "V" << " }"; //butacas vendidas
-			}
-
-		}
-		cout << endl;
-	}
-	cout << endl;
+bool movieTheater::fullRoom() const {
+	return freeSeats() == 0;
 }
-bool movieTheater::fullRoom(){
+int movieTheater::freeSeats() const {
 	int cont = 0;
 	for (int i = 0; i < ROWSTHEATER; i++) {
 		for (int j = 0; j < COLUMNSTHEATER; j++) {
-			if (seats[i][j].getNumber() == 0) {
+			if (seats[i][j].isAvailable()) {
 				cont++;
 			}
 		}
 	}
-	if (cont == 25) {
-		return true;
-	}
-	return false;
+	return cont;
 }
-bool movieTheater::disponibility(int ticket) {
+bool movieTheater::disponibility(int ticket) const {
+	if (ticket <= 0) {
+		return false;
+	}
 	for (int i = 0; i < ROWSTHEATER; i++) {
 		for (int j = 0; j < COLUMNSTHEATER; j++) {
 			if (seats[i][j].getNumber() == ticket) {
@@ -78,22 +69,32 @@ bool movieTheater::disponibility(int ticket) {
 	return false;
 }
 void movieTheater::setReserved(int numberSeat,int voucher){
+	if (!disponibility(numberSeat)) {
+		return;
+	}
 	for (int i = 0; i < ROWSTHEATER; i++) {
 		for (int j = 0; j < COLUMNSTHEATER; j++) {
 			if (seats[i][j].getNumber() == numberSeat) {
-				seats[i][j].setNumber(voucher);
-				seats[i][j].isReserved();
+				seats[i][j].setNumber(-voucher);
 			}
 		}
 	}
 }
-void movieTheater::sold(int numberSeat,int voucher) {
-	int zero = 0;
+void movieTheater::sold(int voucher) {
 	for (int i = 0; i < ROWSTHEATER; i++) {
 		for (int j = 0; j < COLUMNSTHEATER; j++) {
-			if (voucher == seats[i][j].getNumber()) {
-				seats[i][j].setNumber(zero);
+			if (seats[i][j].isReserved() && seats[i][j].getNumber() == -voucher) {
+				seats[i][j].setNumber(0);
 			}
 		}
 	}
+}
+bool movieTheater::hasStarted(time_t now) const {
+	return now >= start;
+}
+bool movieTheater::canSell(time_t now) const {
+	return now < start - SALECLOSINGSECONDS;
+}
+bool movieTheater::overlaps(const movieTheater& other) const {
+	return roomNumber == other.roomNumber && start < other.end && other.start < end;
 }
