@@ -1,14 +1,26 @@
 #include "customer.h"
 
-int Customer::getID(){
+int Customer::getVoucher() const{
+	return voucher;
+}
+string Customer::getID() const{
 	return id;
 }
-int Customer::getCard(){
+string Customer::getCard() const{
 	return card;
 }
-void Customer::setID(int id){
+string Customer::getMaskedCard() const{
+	if (card.size() < 4) {
+		return card;
+	}
+	return "**** **** **** " + card.substr(card.size() - 4);
+}
+void Customer::setVoucher(int voucher){
+	this->voucher = voucher;
+}
+void Customer::setID(string id){
 	this->id = id;
 }
-void Customer::setCard(int card){
+void Customer::setCard(string card){
 	this->card = card;
 }

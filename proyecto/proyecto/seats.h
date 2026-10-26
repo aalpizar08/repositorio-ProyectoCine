@@ -1,17 +1,17 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "sales.h"
 using namespace std;
 class Seats{
 protected:
 	int number = 0;
-	bool reserved = false;
+	bool enabled = false;
 public:
-	void isReserved();
 	void setNumber(int);
-
-	bool getReserved();
-	int getNumber();
+	void enable();
+	int getNumber() const;
+	bool isEnabled() const;
+	bool isAvailable() const;
+	bool isReserved() const;
+	bool isSold() const;
 };
-

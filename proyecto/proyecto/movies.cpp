@@ -7,7 +7,7 @@ Movies::Movies(string name, int year, int duration, string country, string revie
 	this->review = review;
 }
 Movies::~Movies() {}
-string Movies::getName() {
+string Movies::getName() const {
 	return this->name;
 }
 int Movies::getYear() const {

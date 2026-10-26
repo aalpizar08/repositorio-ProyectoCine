@@ -1,16 +1,22 @@
 #include "seats.h"
-void Seats::isReserved(){
-	if (number == 0) {
-		reserved = true;
-	}
-}
 void Seats::setNumber(int number){
 	this->number = number;
 }
-bool Seats::getReserved(){
-	return reserved;
+void Seats::enable(){
+	enabled = true;
 }
-
-int Seats::getNumber(){
+int Seats::getNumber() const{
 	return number;
+}
+bool Seats::isEnabled() const{
+	return enabled;
+}
+bool Seats::isAvailable() const{
+	return enabled && number > 0;
+}
+bool Seats::isReserved() const{
+	return enabled && number < 0;
+}
+bool Seats::isSold() const{
+	return enabled && number == 0;
 }

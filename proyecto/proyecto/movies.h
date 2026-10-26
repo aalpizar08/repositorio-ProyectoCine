@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "string.h"
+#include <string>
 using namespace std;
 class Movies {
 protected:
@@ -13,7 +13,7 @@ protected:
 public:
 	Movies(string, int, int, string, string);
 	~Movies();
-	string getName();
+	string getName() const;
 	int getYear() const;
 	int getDuration() const;
 	string getCountry()const;
