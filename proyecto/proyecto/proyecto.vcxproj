@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -69,7 +69,9 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="UserMacros">
+    <SFML_DIR Condition="'$(SFML_DIR)'==''">$(USERPROFILE)\SFML-2.5.1</SFML_DIR>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -102,13 +104,21 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SFML_DIR)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SFML_DIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SFML_DIR)\bin\sfml-graphics-d-2.dll" "$(OutDir)" &amp;&amp; xcopy /y /d "$(SFML_DIR)\bin\sfml-window-d-2.dll" "$(OutDir)" &amp;&amp; xcopy /y /d "$(SFML_DIR)\bin\sfml-system-d-2.dll" "$(OutDir)"</Command>
+      <Message>Copiando DLLs de SFML</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -116,34 +126,54 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SFML_DIR)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SFML_DIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SFML_DIR)\bin\sfml-graphics-2.dll" "$(OutDir)" &amp;&amp; xcopy /y /d "$(SFML_DIR)\bin\sfml-window-2.dll" "$(OutDir)" &amp;&amp; xcopy /y /d "$(SFML_DIR)\bin\sfml-system-2.dll" "$(OutDir)"</Command>
+      <Message>Copiando DLLs de SFML</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="archive.cpp" />
-    <ClCompile Include="booking.cpp" />
-    <ClCompile Include="customer.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="seats.cpp" />
+    <ClCompile Include="sales.cpp" />
     <ClCompile Include="movies.cpp" />
     <ClCompile Include="movieTheater.cpp" />
-    <ClCompile Include="sales.cpp" />
-    <ClCompile Include="seats.cpp" />
+    <ClCompile Include="booking.cpp" />
+    <ClCompile Include="widgets.cpp" />
+    <ClCompile Include="customer.cpp" />
+    <ClCompile Include="dateTime.cpp" />
+    <ClCompile Include="room.cpp" />
+    <ClCompile Include="archive.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="archive.h" />
-    <ClInclude Include="booking.h" />
-    <ClInclude Include="customer.h" />
+    <ClInclude Include="seats.h" />
+    <ClInclude Include="sales.h" />
     <ClInclude Include="movies.h" />
     <ClInclude Include="movieTheater.h" />
-    <ClInclude Include="sales.h" />
-    <ClInclude Include="seats.h" />
+    <ClInclude Include="booking.h" />
+    <ClInclude Include="menuOption.h" />
+    <ClInclude Include="screen.h" />
+    <ClInclude Include="formField.h" />
+    <ClInclude Include="palette.h" />
+    <ClInclude Include="widgets.h" />
+    <ClInclude Include="customer.h" />
+    <ClInclude Include="dateTime.h" />
+    <ClInclude Include="room.h" />
+    <ClInclude Include="archive.h" />
+    <ClInclude Include="gui.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

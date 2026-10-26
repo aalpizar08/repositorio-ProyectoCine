@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "string.h"
+#include <string>
 using namespace std;
 class Archive
 {
@@ -8,6 +8,5 @@ private:
 	string info;
 public:
 	Archive();
-	void getInfo();
+	string getInfo() const;
 };
-
